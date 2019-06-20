@@ -1,0 +1,119 @@
+Opis aktualizacji: 
+
+
+---------------------------------------------------------------------------------------------------------
+08.01.18
+Usuniêcie opisów
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: klasy/towar.php - zmienione linijki 41, 72, 103
+
+Zmiany w bazie danych: brak
+---------------------------------------------------------------------------------------------------------
+08.01.18
+
+Dodane wyszukiwanie towarów
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: index.php - zmienione linijki 98, 100, klasy/towar.php - dodane linijki 88-117 (funkcja szukajTowaru), home.php - dodane linijki 20-27
+
+Zmiany w bazie danych: brak
+---------------------------------------------------------------------------------------------------------
+03.01.18
+
+Usuniêto niedzia³aj¹ce linki (zni¿ki, opis)
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: index.php - usuniête linijki 85-88, 132, klasy/towar.php - zmienione linijki 48, 79
+
+Zmiany w bazie danych: brak
+---------------------------------------------------------------------------------------------------------
+02.01.18
+
+Na stronie g³ównej wyœwietla siê cena produktu. W okienku kupowania jest informacja o dostêpnej liczbie towarów.
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: klasy/towar.php - zmienione linijki 41, 62, 72, 111
+
+Zmiany w bazie danych: brak
+---------------------------------------------------------------------------------------------------------
+30.12.17
+
+Usuniêcie dzia³ów i podkategorii. Teraz produkty bez obrazków nie powinny siê rozje¿d¿aæ. Jakby te zmiany dotycz¹ce wyœwietlania produktów wywo³ywa³y jakieœ problemy, to mo¿na je usun¹æ poprzez usuniêcie dla wszystkich elementów parametru style="height: coœ tam" w metodach wypisz Towary i wypiszTowaryZKategorii w klasie Towar w pliku klasy/towar.php
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: klasy/kategorie.php - usuniête linijki 14-27; klasy/kategoria.php - usuniête linijki 66-80, 5, zmieniona linijka 6, usuniêta linijka 9, zmieniona linijka 16, usuniête linijki 24, 35, zmieniona linijka 79; dodaj_kategorie.php - zmieniona linijka 11, aktualizuj_kategorie.php - zmieniona linijka 12; klasy/towary.php - zmienione linijki 19, 43; dodaj_towar.php - zmienione linijki 6, 9, 170, 150, 158, 152, 62; klasy towar.php - zmienione linijki 184, 187, 37, 38, 39, 40, 41, 44, 48 (mog³em coœ pomyliæ, ale i tak nikt tego nie czyta)
+
+Zmiany w bazie danych: usuniête tabele dzialy i podkategorie, tabela kategorie - usuniêta kolumna idDzialu, tabela produkty - kolumna opisSlowny jest teraz varchar(75) zamiast varchar(250)
+---------------------------------------------------------------------------------------------------------
+28.12.17
+
+Poprawa b³êdu zamówieñ powy¿ej tysi¹ca z³otych i b³êdu z produktami z polskimi znakami
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: klasy/amowienie.php - dodane linijki 16-17 i 42-43
+
+Zmiany w bazie danych: tabela "zamowienia" ma teraz kolumnê cena(7,2) zamiast cena(5,2)
+---------------------------------------------------------------------------------------------------------
+27.12.17
+
+Poprawa b³êdów w koszyku (szczególnie b³êdów pojawiaj¹cych siê w przypadku, gdy u¿ytkownik jest niezalogowany)
+
+Nowe pliki: brak
+
+Zmiany w istniej¹cych plikach: klasy/koszyk.php - zmieniona 37 linijka, dodane linijki 63-76 (zamiast linijki 64), dodana linijka 7, zmieniona linijka 67
+---------------------------------------------------------------------------------------------------------
+23.12.17
+
+opis: po nieudanym zalogowaniu okienko logowania pokazuje siê automatycznie, usuniêto link "Zapomnia³em has³a"
+zmiany w istniej¹cych plikach: index.php - zmieniona linijka 150, dodane linijki 219 - 227
+
+---------------------------------------------------------------------------------------------------------
+22.12.2017
+
+opis: poprawa b³êdu z³ej ceny w zamówieniach
+klasy/zamowienie.php - zmieniona 40 linijka (funkcja wypiszZamowienia), 77 linijka (funkcja wypiszZamowieniaAdministrator)
+klasy/userpanel.php - zmieniona 116 linijka
+baza danych - tabela zamowienia - dodana kolumna cena
+
+---------------------------------------------------------------------------------------------------------
+20.12.2017r 
+
+1. Naprawiono formularz kontaktowy, poprawiono grafikê. ¯eby dodawaæ kolejne strony trzeba wstawiaæ odnoœniki takie jak w g³ównym pliku index.php czyli --> "index.php?PageName=twojanazwapliku" oraz plikach skryptowych php.
+
+2. Aby formularz kontaktowy wysy³a³ informacje na maila trzeba zastosowaæ siê do notatnika z folderu pomocmail.
+
+3. Dodany plik userpanel do strony ale zawiera b³êdy i nie dzia³a poprawnie.
+
+
+---------------------------------------------------------------------------------------------------------
+17.12.2017r
+
+1. Przebudowa strony na dynamiczne elementy diva klasy container ze wszystkimi plikami php
+(Lokalizacja plików ze wzglêdu na budowê skryptu zosta³a zmieniona i ustawiono nowe adresy w plikach php danych kategori np link do u¿ytkownicy ma postaæ -->"index.php?PageName=uzytkownicy" oraz skrypty realizuj¹ce php maj¹ postaæ header --> 'Location: index.php?PageName=zamowienia'.
+
+2. Dodanie formularza kontaktowego (wersja alpha bardzo wczesna) wymaga wielu poprawek i konfiguracje xamppa ¿eby to dzia³a³o na innym komputerze (wersja zaktualizowana bêdzie zawiera³a info co i jak ma dzia³aæ i ustawiæ)
+
+3. Poprawa kontrolek   
+---------------------------------------------------------------------------------------------------------
+
+Panel administratora - kategorie (dodawanie, usuwanie, zmienianie nazw i dzia³ów),
+
+linki na stronie g³ównej "Online Shop" i "Home" kieruj¹ teraz do index.php
+
+nowe pliki: kategorie.php, aktualizuj_kategorie.php, usun_kategorie.php, dodaj_kategorie.php
+
+Zmiany w istniej¹cych plikach: index.php - zmienione linijki 68 i 74, klasy/administrator.php - dodana 11 linijka;
+
+Klasy/kategoria.php - zmiana definicji klasy Kategoria (teraz dziedziczy po NowaKategoria);
+
+Nowe metody w klasie Kategoria: konstruktor,
+wypiszKategorieAdministrator, usun;
+Nowe pola w klasie Kategoria: wszystkie; nowa klasa: NowaKategoria;
+

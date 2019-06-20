@@ -1,0 +1,130 @@
+body {
+    
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+#content {
+    text-align: center;
+    padding: 5%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.col-lg-12 {
+    padding-bottom: 50px;
+}
+
+.pages {
+    text-align: center;
+}
+.error
+	{
+		color:red;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+#user
+{
+	color:#000;
+}
+#register
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#F8F8F8;
+	text-align:center;
+	padding-bottom:50px;
+	color:black;
+	border-radius:5px;
+	margin-bottom:50px;
+	margin-top:40px;
+	
+}
+.formularz
+{
+	display: inline-block;
+	padding:20px;
+
+}
+#register p
+{ 
+	font-size:25px;
+}
+.cos
+{
+
+	display:inline-block;
+}
+input[type=text],
+input[type=password]
+{
+	width: 350px;
+	height:40px;
+	background-color: white;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 3px;
+	font-size: 15px;
+	padding: 5px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #337AB7;
+	background-color: white;
+}
+
+input[type=submit]
+{
+	width: 200px;
+	background-color: #337AB7;
+	font-size:15px;
+	text-transform:uppercase;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #2269A6;
+}

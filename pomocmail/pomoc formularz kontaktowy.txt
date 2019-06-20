@@ -1,0 +1,8 @@
+1. Podmieniamy plik (php.ini) w folderze o œcie¿ce C:\xampp\php 
+UWAGA JEŒLI MACIE WERSJE 3.2.1 inne wersje to robimy tak:
+
+1. Szukamy linijki 1145 i dajemy przed tym -->;sendmail_path="C:\xampp\mailtodisk\mailtodisk.exe"
+2. w linijce 1142 usuwamy œrednik
+Poka¿e to na SS jak ktoœ nie wie.
+
+2. Szukamy folderu o œcie¿ce C:\xampp\sendmail i zmieniamy dane w pliku (sendmail.ini) jak na zdjêciu o pliku (sendmail.jpg)
